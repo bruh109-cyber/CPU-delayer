@@ -1,0 +1,45 @@
+WSYNC EQU $08
+HMOVE EQU $21
+RESP0 EQU $10
+
+section .text
+PositionPlayerX:
+	sta WSYNC
+	ldx #$06
+
+.loop:
+	dex
+	bne .loop
+	
+	sta RESP0
+	rts
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
